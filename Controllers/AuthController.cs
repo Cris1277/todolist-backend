@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ToDoList.DTOs.Auth;
 using ToDoList.Models;
 using ToDoList.Services;
@@ -17,7 +17,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterDto registerDto)
+        public async Task<IActionResult> Register([FromBody] RegisterDto registerDto)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginDto loginDto)
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
             try
             {
@@ -45,3 +45,4 @@ namespace ToDoList.Controllers
         }
     }
 }
+
