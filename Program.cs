@@ -19,7 +19,7 @@ builder.Services.AddCors(options =>
                 "http://127.0.0.1:5173",
                 "http://localhost:5500",
                 "http://127.0.0.1:5500",
-                "https://stately-kataifi-9c4d8b.netlify.app"
+                "https://cozy-cocada-5d1fe4.netlify.app"
             )
             .AllowAnyHeader()
             .AllowAnyMethod();
