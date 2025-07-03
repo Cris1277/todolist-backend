@@ -15,8 +15,8 @@ This project showcases fullstack development skills, including API design, secur
 
 👉 [https://cozy-cocada-5d1fe4.netlify.app/](https://cozy-cocada-5d1fe4.netlify.app/)
 
-> El frontend está desplegado en Netlify, pero su código no se encuentra en este repositorio.  
-> This repo contains only the backend code (ASP.NET Core Web API).
+> El frontend está desplegado en Netlify, y su código se encuentra en este repositorio (todolist-frontend).  
+> This repo contains the backend code (ASP.NET Core Web API) also you can see todolist-frontend folder.
 
 ---
 
