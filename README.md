@@ -16,7 +16,15 @@ This project showcases fullstack development skills, including API design, secur
 👉 [https://cozy-cocada-5d1fe4.netlify.app/](https://cozy-cocada-5d1fe4.netlify.app/)
 
 > El frontend está desplegado en Netlify, y su código se encuentra en este repositorio (todolist-frontend).  
-> This repo contains the backend code (ASP.NET Core Web API) also you can see todolist-frontend folder.
+> Originalmente, este repositorio estaba destinado a mostrar únicamente el backend, pero he decidido incluir también el frontend por si a alguien le resulta útil.  
+> This repository was originally intended to showcase only the backend, but I’ve decided to include the frontend as well in case it might be useful to others.
+
+## ⚠️ Nota sobre la URL del backend
+
+La URL del backend (`https://todolist-backend-production-003d.up.railway.app/api/`) está expuesta en el frontend **únicamente con fines de demostración**.  
+Toda la lógica sensible y validaciones se ejecutan en el servidor. **No se expone ninguna clave secreta ni variable sensible.**
+
+> En producción, se recomienda usar variables de entorno para gestionar URLs y tokens de forma segura.
 
 ---
 
