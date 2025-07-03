@@ -13,9 +13,10 @@ const App = () => {
   const [editingTaskId, setEditingTaskId] = useState(null); // ID de la tarea en edición (si hay)
   const [token, setToken] = useState(localStorage.getItem('token') || ''); // Token JWT para autenticación
 
-  // URL base de la API del backend
+  // URL base de la API del backend, no contiene información sensible.
+  // Toda lógica crítica está protegida en el servidor.
   const API_BASE = 'https://todolist-backend-production-003d.up.railway.app/api/todolist';
-// Usar http:// si no se tiene certificado SSL válido
+  // Usar http:// si no se tiene certificado SSL válido
 
   // Función para obtener las tareas por ID de usuario
   const getTasksByUserId = async (id) => {
