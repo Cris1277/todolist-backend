@@ -15,7 +15,7 @@ const App = () => {
 
   // URL base de la API del backend
   const API_BASE = 'https://todolist-backend-production-003d.up.railway.app/api/todolist';
-// Usa http:// si no tienes certificado SSL válido
+// Usar http:// si no se tiene certificado SSL válido
 
   // Función para obtener las tareas por ID de usuario
   const getTasksByUserId = async (id) => {
@@ -137,7 +137,7 @@ const App = () => {
   };
 
   // Al cargar el token, asumimos que el userId puede extraerse del token o debe ser seteado aquí.
-  // Si tienes el userId en el JWT, puedes decodificarlo, aquí te dejo un ejemplo básico para JWT:
+  // Si tenemos  el userId en el JWT, podemos decodificarlo, aquí hay un posible ejemplo básico para JWT:
   useEffect(() => {
     if (token) {
       try {
