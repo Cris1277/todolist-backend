@@ -137,7 +137,7 @@ const App = () => {
   };
 
   // Al cargar el token, asumimos que el userId puede extraerse del token o debe ser seteado aquí.
-  // Si tenemos  el userId en el JWT, podemos decodificarlo, aquí hay un posible ejemplo básico para JWT:
+  // Si tenemos el userId en el JWT, podemos decodificarlo, aquí hay un posible ejemplo básico para JWT:
   useEffect(() => {
     if (token) {
       try {
@@ -213,7 +213,7 @@ const App = () => {
     </div>
   </div>
 
-  {/* Footer debajo del contenido */}
+
   <footer className="bg-gray-800 text-white text-center py-4">
     Desarrollado por <a href="https://www.bitnazari.com" className="underline hover:text-blue-400 transition-colors">Bitnazari &copy;</a>
   </footer>
