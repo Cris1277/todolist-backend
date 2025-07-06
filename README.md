@@ -1,113 +1,109 @@
-
 # ✅ ToDoList App — Fullstack Project with .NET and React
 
-Aplicación web completa (fullstack) para la gestión de tareas personales. Incluye una **API REST robusta desarrollada con ASP.NET Core** en el backend y una **interfaz moderna construida con React** en el frontend.
-
 Web-based fullstack application for personal task management. It includes a **robust REST API developed with ASP.NET Core** on the backend and a **modern React-based frontend interface**.
-
-Este proyecto demuestra habilidades completas en desarrollo fullstack, incluyendo diseño de APIs, manejo de autenticación segura con JWT, persistencia de datos con EF Core y desarrollo de interfaces responsivas en React.
 
 This project showcases fullstack development skills, including API design, secure JWT-based authentication, data persistence with EF Core, and responsive UI development in React.
 
 ---
 
-## 🔗 Demo en vivo / Live Demo
+## 🔗 Live Demo
 
 👉 [https://cozy-cocada-5d1fe4.netlify.app/](https://cozy-cocada-5d1fe4.netlify.app/)
 
-> El frontend está desplegado en Netlify, y su código se encuentra en este repositorio (todolist-frontend).  
-> Originalmente, este repositorio estaba destinado a mostrar únicamente el backend, pero he decidido incluir también el frontend por si a alguien le resulta útil.  
-> This repository was originally intended to showcase only the backend, but I’ve decided to include the frontend as well in case it might be useful to others.
-
-## ⚠️ Nota sobre la URL del backend
-
-La URL del backend (`https://todolist-backend-production-003d.up.railway.app/api/`) está expuesta en el frontend **únicamente con fines de demostración**.  
-Toda la lógica sensible y validaciones se ejecutan en el servidor. **No se expone ninguna clave secreta ni variable sensible.**
-
-> En producción, se recomienda usar variables de entorno para gestionar URLs y tokens de forma segura.
+> The frontend is deployed on Netlify, and its code is included in this repository (`todolist-frontend`).  
+> Originally, this repository was intended to showcase only the backend, but I’ve decided to include the frontend as well in case it’s useful to others.
 
 ---
 
-## 🛠️ Stack Tecnológico / Tech Stack
+## ⚠️ Note on the Backend URL
+
+The backend URL (`https://todolist-backend-production-003d.up.railway.app/api/`) is exposed in the frontend **for demonstration purposes only**.  
+All sensitive logic and validations are handled server-side. **No secrets or sensitive variables are exposed.**
+
+> In a production environment, it is recommended to use environment variables to securely manage URLs and tokens.
+
+---
+
+## 🛠️ Tech Stack
 
 ### 🔧 Backend
 - ASP.NET Core Web API (C#)
 - Entity Framework Core (Code First)
-- PostgreSQL (Railway deployment)
+- PostgreSQL (deployed on Railway)
 - JSON Web Tokens (JWT)
-- Hashing de contraseñas con HMACSHA512
-- Arquitectura en capas (Controllers, Services, Repositories)
+- Password hashing with HMACSHA512
+- Layered architecture (Controllers, Services, Repositories)
 
 ### 🎨 Frontend
 - React (Hooks)
 - Fetch API
-- Tailwind CSS (opcional)
-- Autenticación con token y estado local
-- Validaciones de formularios
+- Tailwind CSS (optional)
+- Token-based authentication and local state
+- Form validations
 
 ---
 
-## 🎯 ¿Qué demuestra este proyecto? / What does it demonstrate?
+## 🎯 What Does This Project Demonstrate?
 
-- ✅ Desarrollo y despliegue de una **API RESTful segura y profesional**
-- ✅ Dominio de la **arquitectura por capas**
-- ✅ Autenticación con JWT y control de acceso por usuario
-- ✅ Conexión real entre frontend React y backend .NET
-- ✅ Buenas prácticas de validación, UX y manejo de errores
-- ✅ Uso de PostgreSQL y migraciones EF Core (Code First)
-
----
-
-## ✨ Características principales / Key Features
-
-- Registro y login con hash seguro
-- JWT Authentication
-- CRUD de tareas por usuario autenticado
-- Validación de correo único
-- Manejo de expiración de tokens y errores de sesión
-- Interfaz clara con feedback visual
+- ✅ Development and deployment of a **secure, professional RESTful API**
+- ✅ Mastery of **layered architecture**
+- ✅ JWT authentication and user-based access control
+- ✅ Real integration between a React frontend and a .NET backend
+- ✅ Best practices in validation, UX, and error handling
+- ✅ PostgreSQL usage and EF Core Code First migrations
 
 ---
 
-## ⚙️ Cómo usar / How to Use
+## ✨ Key Features
+
+- Secure user registration and login
+- JWT authentication
+- Task CRUD operations per authenticated user
+- Unique email validation
+- Token expiration handling and session management
+- Clean interface with visual feedback
+
+---
+
+## ⚙️ How to Use
 
 ### Backend
-1. Clona el repositorio / Clone the repo
-2. Configura `appsettings.json` con tu conexión PostgreSQL y JWT
-3. Ejecuta las migraciones de EF Core
-4. Lanza el servidor con:
+1. Clone the repository
+2. Configure `appsettings.json` with your PostgreSQL connection string and JWT settings
+3. Run EF Core migrations
+4. Start the server:
    ```bash
    dotnet run
    ```
 
 ---
 
-## 🛡️ Seguridad y Validaciones / Security and Validations
+## 🛡️ Security and Validations
 
-- Hash + salt para contraseñas (HMACSHA512)
-- JWT con claims y expiración
-- Validación de propiedad antes de operar tareas
-- Manejo de errores y expiración desde el frontend
-
----
-
-## 🚀 Mejoras futuras / Future Improvements
-
-- Confirmación por correo electrónico
-- Recuperación de contraseña
-- Filtros y búsqueda de tareas
-- UI/UX más amigable
-- Tests automatizados
+- Passwords hashed with salt (HMACSHA512)
+- JWT with claims and expiration
+- Ownership validation for all task operations
+- Error and expiration handling from the frontend
 
 ---
 
-## 👨‍💻 Autor / Author
+## 🚀 Future Improvements
+
+- Email confirmation
+- Password recovery
+- Task filtering and search
+- Enhanced UI/UX
+- Automated testing
+
+---
+
+## 👨‍💻 Author
 
 **Cristian Serrano**  
 🔗 [GitHub - Cris1277](https://github.com/Cris1277)
 
 ---
 
-## 📝 Licencia / License
+## 📝 License
 
 MIT License © 2025 Cristian Serrano
