@@ -15,6 +15,17 @@ This project showcases fullstack development skills, including API design, secur
 
 ---
 
+## 👤 Test User
+
+To explore all available features without creating an account, you can use the following test credentials:
+
+- **Email:** usuario1@gmail.com  
+- **Password:** Pruebas123*
+
+This test user already has pre-created tasks to demonstrate the full functionality of the application.
+
+---
+
 ## ⚠️ Note on the Backend URL
 
 The backend URL (`https://todolist-backend-production-003d.up.railway.app/api/`) is exposed in the frontend **for demonstration purposes only**.  
